@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="txtTotal" prefHeight="542.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PagoControlador">
+   <children>
+      <Label fx:id="lblCancelacion" layoutX="98.0" layoutY="14.0" prefHeight="56.0" prefWidth="150.0" text="Boleto" textFill="#fbb506" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Cambria Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="154.0" layoutY="455.0" text="TOTAL:" />
+      <Label fx:id="lblPrecioPelicula" layoutX="39.0" layoutY="309.0" text="PRECIO POR PELICULA">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAdicional" layoutX="34.0" layoutY="354.0" text="ADICIONAL POR COMIDA">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrecioPelicula" layoutX="227.0" layoutY="296.0" />
+      <TextField fx:id="txtAdicional" layoutX="227.0" layoutY="350.0" />
+      <TextField fx:id="txtTot" layoutX="226.0" layoutY="439.0" />
+      <Button fx:id="btnAceptar" layoutX="147.0" layoutY="497.0" mnemonicParsing="false" onAction="#Aceptar" text="ACEPTAR" />
+      <Label layoutX="34.0" layoutY="127.0" text="Num. de Asiento:" />
+      <Label layoutX="34.0" layoutY="171.0" text="Fecha y Hora de Funcion:" />
+      <Label fx:id="lblAsiento" layoutX="251.0" layoutY="127.0" text="AAAAAAAAAA" />
+      <Label fx:id="lblfechora" layoutX="251.0" layoutY="171.0" text="AAAAAAAAAA" />
+      <Label layoutX="39.0" layoutY="218.0" text="Pelicula:" />
+      <Label fx:id="lblTpeli" layoutX="251.0" layoutY="218.0" text="AAAAAAAAAA" />
+   </children>
+</AnchorPane>

@@ -14,7 +14,7 @@ import javafx.scene.control.Label;
 
 /**
  *
- * @author andressuarez
+ * @author Grupo 2
  */
 public class FxmlMainController implements Initializable {
     

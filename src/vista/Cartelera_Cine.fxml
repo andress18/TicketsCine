@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CarteleraCineControlador">
+   <children>
+      <Label fx:id="lblCartPeliculas" layoutX="205.0" layoutY="14.0" prefHeight="31.0" prefWidth="227.0" text="Cartelera Películas" textFill="#ffc421">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgPel" fitHeight="286.0" fitWidth="284.0" layoutX="36.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/BlackPanther.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="427.0" prefHeight="31.0" prefWidth="195.0" text="Label" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="lblTitulo1" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="57.0" prefHeight="26.0" prefWidth="183.0" text="Películas disponibles:" textAlignment="CENTER" textOverrun="CLIP" />
+      <ChoiceBox fx:id="lstPelDisp" layoutX="243.0" layoutY="57.0" prefWidth="150.0" />
+      <Label fx:id="lblDuracion" alignment="CENTER" contentDisplay="CENTER" layoutX="439.0" layoutY="181.0" prefHeight="26.0" prefWidth="183.0" text="dur" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="lblTitulo11" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="181.0" prefHeight="26.0" prefWidth="183.0" text="Duración:" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="lblTitulo112" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="235.0" prefHeight="26.0" prefWidth="183.0" text="Fecha Estreno:" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="lblFechaEst" alignment="CENTER" contentDisplay="CENTER" layoutX="439.0" layoutY="235.0" prefHeight="26.0" prefWidth="183.0" text="fehc_estr" textAlignment="CENTER" textOverrun="CLIP" />
+      <Button layoutX="334.0" layoutY="334.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="195.0" text="Seleccionar Pelicula" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

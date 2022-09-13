@@ -5,26 +5,42 @@
  */
 package ticketscine;
 
+import java.io.IOException;
+
+import controlador.CarteleraCineControlador;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
  *
- * @author andressuarez
+ * @author Grupo 2
  */
 public class TicketsCine extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FxmlMain.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.show();
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(TicketsCine.class.getResource("/vista/Cartelera_Cine.fxml"));
+
+            Pane ventana = (Pane) loader.load();
+
+            Scene scene = new Scene(ventana);
+
+            stage.setScene(scene);
+
+            CarteleraCineControlador controller = loader.getController();
+
+            controller.setStage(stage);
+
+            stage.show();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     /**
